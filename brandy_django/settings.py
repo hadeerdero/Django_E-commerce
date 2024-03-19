@@ -25,8 +25,8 @@ SECRET_KEY = '*oot^f#nk$e$2qp0#02wz86b*0mjxp$_jalzv13l2)artrojdn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
 
@@ -48,8 +48,41 @@ INSTALLED_APPS = [
     
 ]
 CORS_ALLOWED_ORIGINS = [
+    "http://170.187.154.46",
     "http://localhost:8080",
+    "http://185.3.95.112",
+    "http://176.58.116.103",
+    "http://127.0.0.1:8080",
+    "http://127.0.0.1:8085",
+    "http://127.0.0.1:8000"
     
+]
+CORS_ALLOW_METHODS = [
+    "DELETE",
+    "GET",
+    "OPTIONS",
+    "PATCH",
+    "POST",
+    "PUT",
+]
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    'lang',
+    "x-csrftoken",
+    "x-requested-with",
+
+    # "lang",
+    # "business-type"
+    # "Clinic-Id",
+    # "Dashboard-Id",
+    # "Org-Id",
+
 ]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

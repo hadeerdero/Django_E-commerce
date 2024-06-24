@@ -26,6 +26,7 @@ SECRET_KEY = '*oot^f#nk$e$2qp0#02wz86b*0mjxp$_jalzv13l2)artrojdn'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
+STRIPE_SECRET_KEY = 'sk_test_4eC39HqLyjWDarjtT1zdp7dc'
 CORS_ORIGIN_ALLOW_ALL = True
 
 # Application definition
@@ -44,6 +45,7 @@ INSTALLED_APPS = [
     'djoser',
     
     'product',
+    'order',
     
     
 ]

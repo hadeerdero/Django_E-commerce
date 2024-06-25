@@ -22,7 +22,7 @@ class OrderSerializer(serializers.ModelSerializer):
         "place",
         "phone",
         "created_at",
-        "paid_amount",)
+        "paid_amount")
     def create(self, validated_data):
         items_data = validated_data.pop('items')
         order = Order.objects.create(**validated_data)
